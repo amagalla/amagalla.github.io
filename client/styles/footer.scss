@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 1em;
+  position: absolute;
+  bottom: -1;
+  width: 100%;
+  background-color: #afbdcc;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+#linkedin-icon {
+  padding-right: 1em;
+  cursor: pointer;
+  color: black;
+}
+
+#github-icon {
+  cursor: pointer;
+  color: black;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}

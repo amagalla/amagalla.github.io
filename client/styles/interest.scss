@@ -1,0 +1,20 @@
+.reel-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 2.5em;
+}
+
+.reel-info-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 385px) {
+  .reel-info-container {
+    font-size: 20px;
+  }
+}
