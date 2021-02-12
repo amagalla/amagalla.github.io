@@ -5,8 +5,13 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body,
 html {
-  max-width: 1000%;
+  max-width: 100%;
   overflow-x: hidden;
-  overflow-x: hidden;
+}
+
+.overall-component-container {
+  border: solid transparent;
+  width: 100%;
 }

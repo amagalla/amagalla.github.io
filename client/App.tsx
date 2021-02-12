@@ -9,7 +9,7 @@ import "./styles/app.scss";
 
 const App: FunctionComponent = () => {
   return (
-    <div>
+    <div className="overall-component-container">
       <NavBar />
       <About />
       <Work />

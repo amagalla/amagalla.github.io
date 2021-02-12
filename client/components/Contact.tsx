@@ -33,7 +33,11 @@ const Contact = () => {
 
   return (
     <>
-      <div className="work-title" id="contact" data-aos="zoom-in">
+      <div
+        className="work-title contact-heading"
+        id="contact"
+        data-aos="zoom-in"
+      >
         Let's Talk More
       </div>
       <form className="form" onSubmit={sendEmail} data-aos="zoom-in">
@@ -87,24 +91,28 @@ const Contact = () => {
           <div></div>
         )}
       </form>
-      <div data-aos="zoom-out">
+      <div className="icons-real-container">
         <div className="contact-icon-container">
           <div className="contact-divs">
-            <i className="fa fa-map-marker fa-2x"></i>
+            <i className="fa fa-map-marker fa-2x" data-aos="zoom-out"></i>
           </div>
-          <div className="contact-divs">San Francisco, Bay Area</div>
+          <div className="contact-divs" data-aos="zoom-out">
+            San Francisco, Bay Area
+          </div>
         </div>
         <div className="contact-icon-container">
           <div className="contact-divs">
-            <i className="fa fa-phone fa-2x"></i>
+            <i className="fa fa-phone fa-2x" data-aos="zoom-out"></i>
           </div>
-          <div className="contact-divs">(510) 314-5458</div>
+          <div className="contact-divs" data-aos="zoom-out">
+            (510) 314-5458
+          </div>
         </div>
         <div className="contact-icon-container">
           <div className="contact-divs">
-            <i className="fa fa-envelope fa-2x"></i>
+            <i className="fa fa-envelope fa-2x" data-aos="zoom-out"></i>
           </div>
-          <div className="contact-divs">
+          <div className="contact-divs" data-aos="zoom-out">
             <a className="web-link" href="mailto:anthonymagallanes24@gmail.com">
               anthonymagallanes24@gmail.com
             </a>

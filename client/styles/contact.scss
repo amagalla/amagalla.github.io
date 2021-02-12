@@ -1,5 +1,11 @@
+.icons-real-container {
+  width: 80%;
+  margin: auto;
+}
+
 .contact-heading {
-  border: solid;
+  width: 80%;
+  margin: auto;
   margin-top: 2em;
 }
 
@@ -36,4 +42,5 @@ form {
 .contact-divs {
   display: flex;
   justify-content: center;
+  border: solid transparent;
 }
