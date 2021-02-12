@@ -1,9 +1,9 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import "../styles/work.scss";
 import recoilizeTitle from "../assets/recoilize_cover.png";
 import hideAndSecret from "../assets/hide&Secret.png";
 
-const Work = () => {
+const Work: FunctionComponent = () => {
   return (
     <>
       <div className="work-title" id="work" data-aos="fade-up">

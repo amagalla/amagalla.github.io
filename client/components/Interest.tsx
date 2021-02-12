@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import "../styles/interest.scss";
 
-const Interest = () => {
+const Interest: FunctionComponent = () => {
   return (
     <>
       <div className="work-title" id="interest" data-aos="fade-up">

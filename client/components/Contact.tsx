@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/contact.scss";
 import emailjs from "emailjs-com";
 
-function sendEmail(e) {
+const sendEmail = (e: React.FormEvent) => {
   e.preventDefault();
   emailjs
     .sendForm(
@@ -12,21 +12,22 @@ function sendEmail(e) {
       "user_vXnsBHdh7Ji4Pish6PjcC"
     )
     .then(
-      (result) => {
+      (result: any) => {
+        console.log("this is result ", result);
+
         console.log(result.text);
       },
-      (error) => {
+      (error: any) => {
         console.log(error.text);
       }
     );
-  e.target.reset();
-}
+  document.querySelector("form")!.reset();
+};
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  function gotSubmitted(e) {
+  function gotSubmitted(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault;
-    console.log("submit has been clicked");
     setIsSubmitted(true);
   }
 
@@ -70,7 +71,11 @@ const Contact = () => {
           ></textarea>
         </div>
         <div id="form-submit">
-          <button onClick={gotSubmitted} type="submit" className="btn btn-primary">
+          <button
+            onClick={gotSubmitted}
+            type="submit"
+            className="btn btn-primary"
+          >
             Submit
           </button>
         </div>
@@ -83,28 +88,28 @@ const Contact = () => {
         )}
       </form>
       <div data-aos="zoom-out">
-      <div className="contact-icon-container">
-        <div className="contact-divs">
-          <i className="fa fa-map-marker fa-2x"></i>
+        <div className="contact-icon-container">
+          <div className="contact-divs">
+            <i className="fa fa-map-marker fa-2x"></i>
+          </div>
+          <div className="contact-divs">San Francisco, Bay Area</div>
         </div>
-        <div className="contact-divs">San Francisco, Bay Area</div>
-      </div>
-      <div className="contact-icon-container">
-        <div className="contact-divs">
-          <i className="fa fa-phone fa-2x"></i>
+        <div className="contact-icon-container">
+          <div className="contact-divs">
+            <i className="fa fa-phone fa-2x"></i>
+          </div>
+          <div className="contact-divs">(510) 314-5458</div>
         </div>
-        <div className="contact-divs">(510) 314-5458</div>
-      </div>
-      <div className="contact-icon-container">
-        <div className="contact-divs">
-          <i className="fa fa-envelope fa-2x"></i>
+        <div className="contact-icon-container">
+          <div className="contact-divs">
+            <i className="fa fa-envelope fa-2x"></i>
+          </div>
+          <div className="contact-divs">
+            <a className="web-link" href="mailto:anthonymagallanes24@gmail.com">
+              anthonymagallanes24@gmail.com
+            </a>
+          </div>
         </div>
-        <div className="contact-divs">
-          <a className="web-link" href="mailto:anthonymagallanes24@gmail.com">
-            anthonymagallanes24@gmail.com
-          </a>
-        </div>
-      </div>
       </div>
     </>
   );

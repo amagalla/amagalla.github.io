@@ -17,11 +17,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i
-            id="github-icon"
-            className="fa fa-github fa-lg"
-            
-          ></i>
+          <i id="github-icon" className="fa fa-github fa-lg"></i>
         </a>
       </div>
       <p className="footer-text">Anthony Magallanes • Software Engineer</p>

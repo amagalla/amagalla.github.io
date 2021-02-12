@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import "../styles/about.scss";
 import Headshot from "../assets/Anthony_Magallanes.png";
 
-const About = () => {
+const About: FunctionComponent = () => {
   return (
     <>
       <div className="title" id="about">
@@ -33,7 +33,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
     </>
   );
 };
