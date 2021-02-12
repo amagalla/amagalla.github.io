@@ -5,18 +5,18 @@ import { Link } from "react-scroll";
 
 const NavBar = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState<boolean>(false)
 
   const toggleMode = () => {
     if (!toggle) {
-      document.querySelector<HTMLElement>('body').style.backgroundColor = "#18191a";
-      document.querySelector<HTMLElement>('.navBar-container').style.backgroundColor = "#18191a";
-      document.querySelector<HTMLElement>('body').style.color = "white";
+      document.querySelector<HTMLElement>('body')!.style.backgroundColor = "#18191a";
+      document.querySelector<HTMLElement>('.navBar-container')!.style.backgroundColor = "#18191a";
+      document.querySelector<HTMLElement>('body')!.style.color = "white";
     }
     else {
-      document.querySelector<HTMLElement>('body').style.backgroundColor = "white";
-      document.querySelector<HTMLElement>('.navBar-container').style.backgroundColor = "white";
-      document.querySelector<HTMLElement>('body').style.color = "#18191a";
+      document.querySelector<HTMLElement>('body')!.style.backgroundColor = "white";
+      document.querySelector<HTMLElement>('.navBar-container')!.style.backgroundColor = "white";
+      document.querySelector<HTMLElement>('body')!.style.color = "#18191a";
     }
     setToggle(tog => !tog)
   }
