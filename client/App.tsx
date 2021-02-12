@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Work from "./components/Work";
@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/app.scss";
 
-const App = () => {
+const App: FunctionComponent = () => {
   return (
     <div>
       <NavBar />
