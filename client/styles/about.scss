@@ -82,24 +82,6 @@
   object-fit: cover;
 }
 
-.about-tech-1,
-.about-tech-2 {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2em;
-  margin-top: 1em;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  animation-name: aboutOp;
-  animation-delay: 2.5s;
-  @include animationProperties();
-}
-
-.about-tech-2 {
-  margin-top: 0.5em;
-}
-
 @media only screen and (min-width: 1027px) and (max-width: 1200px) {
   .about-info {
     font-size: 22px;
@@ -137,15 +119,5 @@
     margin-right: auto;
     font-size: 20px;
     max-width: 100%;
-  }
-  .about-tech-2 {
-    margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 628px) {
-  .about-tech-1,
-  .about-tech-2 {
-    max-width: 50%;
   }
 }

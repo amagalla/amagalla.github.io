@@ -33,10 +33,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="about-tech-1">
-        •Javascript/Typescript •React/Redux/Recoil •Node/Express
-      </div>
-      <div className="about-tech-2">•SQL/NoSQL •Jest/Enzyme •Webpack/CICD</div>
+
     </>
   );
 };
