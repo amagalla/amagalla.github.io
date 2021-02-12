@@ -10,7 +10,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i id="linkedin-icon" class="fa fa-linkedin fa-lg"></i>
+          <i id="linkedin-icon" className="fa fa-linkedin fa-lg"></i>
         </a>
         <a
           href="https://github.com/amagalla"
@@ -19,8 +19,8 @@ const Footer = () => {
         >
           <i
             id="github-icon"
-            className="footer-icons"
-            class="fa fa-github fa-lg"
+            className="fa fa-github fa-lg"
+            
           ></i>
         </a>
       </div>
